@@ -40,10 +40,11 @@ cloudinary.config({
   api_key: process.env.CLOUD_API_KEY,
   api_secret: process.env.CLOUD_API_SECRET,
 });
+app.use(cors(corsOption));
 app.use(express.json());
 app.use(cookieParser());
 app.use(urlencoded({ extended: true }));
-app.use(cors(corsOption));
+
 app.use("/api", userRouter);
 app.use("/api", chatRouter);
 app.use("/api", adminRouter);
