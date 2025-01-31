@@ -1,3 +1,8 @@
+const USER_TOKEN = "userCookie";
+export default USER_TOKEN;
+
+
+
 export const corsOption = {
   origin: [
       "http://localhost:5173",
@@ -8,3 +13,7 @@ export const corsOption = {
   credentials: true,
   allowedHeaders: ["Content-Type", "Authorization"],
 };
+
+
+
+
