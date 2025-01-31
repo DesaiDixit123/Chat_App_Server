@@ -1,7 +1,5 @@
-const USER_TOKEN = "userCookie";
-export default USER_TOKEN;
-
-
+  
+export const USER_TOKEN="userCookie"
 
 export const corsOption = {
   origin: [
